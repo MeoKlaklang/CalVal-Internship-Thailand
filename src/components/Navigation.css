@@ -67,3 +67,45 @@
 .nav-links a:hover::after {
 	width: 80%;
 }
+
+
+.dropdown {
+  position: relative;
+}
+
+/* dropdown box */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+
+  background: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 10px;              /* meer ruimte in box */
+  min-width: 260px;
+
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  z-index: 99999;
+}
+
+/* open */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+/* meer interlinie / spacing */
+.dropdown-menu li + li {
+  margin-top: 6px;            /* ruimte tussen items */
+}
+
+/* dropdown links: zelfde look als nav, maar iets meer lucht */
+.dropdown-menu a {
+  display: block;
+  padding: 0.7rem 1rem;       /* meer verticale padding */
+  line-height: 1.4;           /* meer interlinie */
+  border-radius: 10px;
+}

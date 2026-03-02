@@ -157,7 +157,7 @@ const Home = () => {
         <div className="about-inner">
           {/* LEFT */}
           <div className="about-left">
-            <h2 className="about-title">About GISTDA</h2>
+            <h2 className="about-title">What is Calibration/Validation</h2>
             <p className="about-text">
               The Geo-Informatics and Space Technology Development Agency (GISTDA)
               is Thailand's premier organization for space technology and geospatial
@@ -196,60 +196,208 @@ const Home = () => {
         </div>
       </section>
 
-      {/* FEATURES */}
-      <section className="section">
-        <div className="container">
-          <h2 className="section-title">What You'll Explore</h2>
+      {/* BENEFITS (inside a horizontal wave) */}
+<section className="benefits-wave-section">
+  {/* clipPath voor benefits wave */}
+  <svg className="clip-svg" aria-hidden="true">
+    <defs>
+      <clipPath id="benefitsWaveClip" clipPathUnits="objectBoundingBox">
+        <path
+          d="
+            M 0 0.08
+            C 0.12 0.02, 0.28 0.02, 0.40 0.08
+            C 0.55 0.16, 0.62 0.10, 0.72 0.07
+            C 0.86 0.03, 0.94 0.05, 1 0.10
+            L 1 0.92
+            C 0.92 0.98, 0.78 0.98, 0.66 0.93
+            C 0.54 0.88, 0.44 0.90, 0.34 0.94
+            C 0.20 0.99, 0.08 0.98, 0 0.92
+            L 0 0.08
+            Z
+          "
+        />
+      </clipPath>
+    </defs>
+  </svg>
 
-          <div className="features-grid">
-            <div className="feature-card">
-              <div className="feature-icon">🛰️</div>
-              <h3>Satellite Data Analysis</h3>
-              <p>Work with real satellite imagery and learn to process Earth observation data</p>
-            </div>
+  {/* witte golf */}
+  <div className="benefits-wave" aria-hidden="true" />
 
-            <div className="feature-card">
-              <div className="feature-icon">🗺️</div>
-              <h3>GIS Development</h3>
-              <p>Build geographic information systems and spatial databases</p>
-            </div>
+  <div className="benefits-content">
+    <div className="benefits-header">
+      <h2 className="benefits-title">
+        The benefits working with <span className="benefits-accent">Cal/Val team</span>
+      </h2>
 
-            <div className="feature-card">
-              <div className="feature-icon">🔭</div>
-              <h3>Space Technology</h3>
-              <p>Get hands-on experience with space technology and research</p>
-            </div>
+      {/* pixels naast titel */}
+      <div className="benefits-title-pixels" aria-hidden="true">
+        {Array.from({ length: 8 }).map((_, i) => (
+          <span key={i} className="benefits-mini-pixel" />
+        ))}
+      </div>
 
-            <div className="feature-card">
-              <div className="feature-icon">📡</div>
-              <h3>Remote Sensing</h3>
-              <p>Learn advanced remote sensing techniques and applications</p>
-            </div>
-          </div>
+      {/* doodle placeholders (later images) */}
+      <div className="benefits-doodle doodle-top-right" aria-hidden="true" />
+      <div className="benefits-doodle doodle-bottom-left" aria-hidden="true" />
+    </div>
+
+    <div className="benefits-grid">
+      <div className="benefits-card">
+        <h3>Hands on experience</h3>
+        <ul>
+          <li><b>Calibration and Validation:</b> Master techniques to ensure satellite data accuracy and reliability.</li>
+          <li><b>Image Processing:</b> Dive into advanced processing methods for satellite imagery.</li>
+          <li><b>Real-World Applications:</b> Learn to use satellite data effectively for research and decision-making.</li>
+        </ul>
+      </div>
+
+      <div className="benefits-card">
+        <h3>What you will gain</h3>
+        <ul>
+          <li><b>Master New Skills:</b> Develop cutting-edge technical expertise and sharpen problem-solving abilities.</li>
+          <li><b>Think Bigger:</b> Adopt a forward-thinking mindset and unlock your potential for growth.</li>
+          <li><b>Unleash Creativity:</b> Innovate and explore groundbreaking ideas while collaborating on impactful projects.</li>
+          <li><b>Find Your Inspiration:</b> Work with passionate professionals who will guide your journey.</li>
+        </ul>
+      </div>
+
+      <div className="benefits-card">
+        <h3>What you will receive</h3>
+        <ul>
+          <li><b>Calibration and Validation:</b> Master techniques to ensure satellite data accuracy and reliability.</li>
+          <li><b>Image Processing:</b> Dive into advanced processing methods for satellite imagery.</li>
+          <li><b>Real-World Applications:</b> Learn to use satellite data effectively for research and decision-making.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* WORKSHOP SECTION (like screenshot) */}
+<section className="workshop-section">
+  <div className="workshop-inner">
+    {/* LEFT COLLAGE */}
+    <div className="workshop-collage">
+      <img className="ws-img ws-img--tall" src="/img1.jpg" alt="Workshop 1" />
+      <img className="ws-img ws-img--mid" src="/img3.jpg" alt="Workshop 2" />
+      <img className="ws-img ws-img--bottom" src="/img4.jpg" alt="Workshop 3" />
+    </div>
+
+    {/* RIGHT CONTENT */}
+    <div className="workshop-content">
+      <div className="workshop-title-row">
+        <h2 className="workshop-title">Workshop from Cal/Val team</h2>
+
+        {/* mini pixels near title */}
+        <div className="workshop-title-pixels" aria-hidden="true">
+          {Array.from({ length: 7 }).map((_, i) => (
+            <span key={i} className="workshop-mini-pixel" />
+          ))}
         </div>
-      </section>
+      </div>
 
-      {/* STATS */}
-      <section className="section section-wide">
-        <div className="stats-section">
-          <div className="stat-item">
-            <span className="stat-number">100+</span>
-            <span className="stat-label">Interns Placed</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">50+</span>
-            <span className="stat-label">Research Projects</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">12</span>
-            <span className="stat-label">Weeks Program</span>
-          </div>
+      <h3 className="workshop-subtitle">Say Hi To THEOS 2 from The Earth.</h3>
+
+      <p className="workshop-text">
+        We offer hands-on experience that allows you to engage directly with professional
+        projects, providing a real-world understanding of what it's like to work at the
+        forefront of the space industry.
+        <br /><br />
+        Our internships accelerate your career development, equipping you with the skills
+        and knowledge needed for future success.
+        <br /><br />
+        As a student intern, you'll have the opportunity to apply what you've learned in
+        your studies to meaningful projects, gaining valuable insights that will shape
+        your professional journey.
+      </p>
+
+      <button className="workshop-btn">View more projects</button>
+
+      {/* DOODLES */}
+      <div className="workshop-doodles" aria-hidden="true">
+        <img className="ws-doodle ws-doodle--star1" src="/star.png" alt="" />
+        <img className="ws-doodle ws-doodle--star2" src="/star2.png" alt="" />
+        <img className="ws-doodle ws-doodle--theos" src="/theos2.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+ {/* FINAL CTA SECTION */}
+<section className="final-section">
+  {/* kleine pixels linksboven */}
+  <div className="final-pixels" aria-hidden="true">
+    {Array.from({ length: 7 }).map((_, i) => (
+      <span key={i} className="final-pixel" />
+    ))}
+  </div>
+
+  <div className="final-inner">
+    {/* LEFT */}
+    <div className="final-left">
+      <h2 className="final-title">Why you should join us?</h2>
+
+      <p className="final-text">
+        At GISTDA, we have the opportunity to contribute to groundbreaking projects that shape
+        the future of space and satellite technologies, enhancing Thailand&apos;s role in the global
+        space industry.
+        <br /><br />
+        You&apos;ll gain hands-on experience, advance your career, and build a strong professional
+        network within the space technology sector. We empower you to think creatively, challenge
+        yourself, and achieve your professional goals while working on meaningful projects that
+        bring the benefits of space to people.
+        <br /><br />
+        Join our Cal/Val team and be part of the exciting world of space exploration, where you&apos;ll
+        grow, innovate, and help drive the advancement of space technology for the greater good.
+      </p>
+
+      <button className="final-btn">Send application</button>
+    </div>
+
+    {/* CENTER DOODLE (later replace if you want) */}
+    <div className="final-doodle" aria-hidden="true">
+      {/* voorbeeld: astronaut doodle later */}
+      {/* <img src="/astronaut.png" alt="" /> */}
+      <img src="/theos2.png" alt="" />
+    </div>
+
+    {/* RIGHT */}
+    <div className="final-right">
+      <div className="final-block">
+        <h3 className="final-block-title">Qualifications</h3>
+        <ul className="final-list">
+          <li>Must be 18 years of older at the time of application</li>
+          <li>Currently enrolled as a full-time university student, at least in the 3rd year or higher</li>
+          <li>Able to commit to a minimum internship duration of 3 months (more than 60 working days)</li>
+          <li>Must have a minimum 3.00 GPA</li>
+          <li>Strong proficiency in English communication</li>
+        </ul>
+      </div>
+
+      <div className="final-block">
+        <h3 className="final-block-title">Position available</h3>
+        <div className="final-tags">
+          <span className="final-tag">Programmer</span>
+          <span className="final-tag">Software Tester</span>
+          <span className="final-tag">Researcher</span>
+          <span className="final-tag">Content Creator</span>
+          <span className="final-tag">Graphic Designer</span>
+          <span className="final-tag">Interpreter</span>
         </div>
-      </section>
+      </div>
 
-      <footer className="home-footer">
-        <p>© 2026 GISTDA Internship Program | Reaching for the Stars</p>
-      </footer>
+      <button className="final-btn secondary">More About Position</button>
+    </div>
+  </div>
+
+  {/* clouds bottom */}
+  <div className="clouds-wrap" aria-hidden="true">
+    <div className="cloud cloud-1" />
+    <div className="cloud cloud-2" />
+    <div className="cloud cloud-3" />
+  </div>
+</section>
+  
     </div>
   );
 };
