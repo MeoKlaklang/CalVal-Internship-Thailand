@@ -11,14 +11,14 @@ const Navigation = () => {
 
 			<ul className="nav-links">
 				<li>
-					<Link to="/">Home</Link>
+					<Link to="/Pages/Home">Home</Link>
 				</li>
 				<li className="dropdown">
 					<Link to="/about">Positions available</Link>
 
 					<ul className="dropdown-menu">
 						<li>
-							<Link to="/positions/programmer">Programmer</Link>
+							<Link to="/Pages/Programmer">Programmer</Link>
 						</li>
 						<li>
 							<Link to="/positions/software-tester">Software Tester</Link>
@@ -38,7 +38,7 @@ const Navigation = () => {
 					</ul>
 				</li>{" "}
 				<li>
-					<Link to="/projects">About Cal/val</Link>
+					<Link to="/about-calval">About Cal/val</Link>
 				</li>
 				<li>
 					<Link to="/contact">Contact us</Link>

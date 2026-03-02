@@ -443,7 +443,9 @@
 
 /* LEFT */
 .about-left {
-	max-width: 540px;
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .about-title {
@@ -504,66 +506,24 @@
   color: rgba(230, 237, 243, 0.85);
 }
 
-/* RIGHT */
-.about-right {
-  position: relative;
-  height: 420px;
-}
 
-/* THE IMAGE: push to the right edge of the screen */
-.about-berg {
-  position: absolute;
-  right: -250px;      /* tegen rechterrand, corrigeert container padding */
-  top: 70%;
-  transform: translateY(-50%);
 
-  width: min(350px, 70vw);
-  max-width: none;
-  height: auto;
-
-  filter: drop-shadow(0 30px 80px rgba(0,0,0,0.35));
-  pointer-events: none;
-  user-select: none;
-}
-
-/* optional stars */
-.about-star {
-  position: absolute;
-  opacity: 0.9;
-  animation: starTwinkle 4s ease-in-out infinite;
-  pointer-events: none;
-}
-
-.about-star.a1 {
-  right: 140px;
-  top: 90px;
-  width: 14px;
-}
-
-.about-star.a2 {
-  right: 80px;
-  top: 140px;
-  width: 22px;
-  animation-duration: 5.2s;
-}
 
 /* ==============================
    SCROLL PIXEL REVEAL (img1.jpg)
    ============================== */
 
 .scroll-pixel-wrap {
-  width: 80%;
+  width: 250%;
   margin-top: 50px;
   position: relative;
-  border-radius: 35px;
   overflow: hidden;
 }
 
-.scroll-pixel-wrap .internship-img {
-  width: 100%;
-  height: auto;
+.scroll-pixel-wrap .ice-img {
+  width: 250%;
+  height: 550%;
   display: block;
-  border-radius: 35px;
 }
 
 /* Pixel overlay grid */
@@ -579,7 +539,7 @@
 
 /* Each block */
 .scroll-pixel {
-  background: #050712; /* match your galaxy bg */
+  background: #000000; /* match your galaxy bg */
 }
 
 

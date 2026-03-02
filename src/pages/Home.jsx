@@ -1,4 +1,5 @@
 import { useMemo, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import Starfield from "../components/Starfield";
 import PlanetsLayer from "../components/PlanetsLayer";
@@ -9,6 +10,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // HERO floating pixels (jouw bestaande)
   const pixels = useMemo(() => {
     const count = 18;
@@ -169,8 +174,8 @@ const Home = () => {
             {/* SCROLL PIXEL REVEAL IMAGE */}
             <div className="scroll-pixel-wrap" ref={scrollPixelRef}>
               <img
-                className="internship-img"
-                src="/img1.jpg"
+                className="ice-img"
+                src="/ice.png"
                 alt="Satellite orbiting Earth"
               />
 
@@ -182,17 +187,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* RIGHT */}
-          <div className="about-right">
-            <img
-              className="about-berg"
-              src="/berg.png"
-              alt="Mountain wave with satellite"
-            />
-
-            <img className="about-star a1" src="/star.png" alt="" aria-hidden="true" />
-            <img className="about-star a2" src="/star2.png" alt="" aria-hidden="true" />
-          </div>
         </div>
       </section>
 
@@ -377,12 +371,12 @@ const Home = () => {
       <div className="final-block">
         <h3 className="final-block-title">Position available</h3>
         <div className="final-tags">
-          <span className="final-tag">Programmer</span>
-          <span className="final-tag">Software Tester</span>
-          <span className="final-tag">Researcher</span>
-          <span className="final-tag">Content Creator</span>
-          <span className="final-tag">Graphic Designer</span>
-          <span className="final-tag">Interpreter</span>
+          <Link to="/Pages/Programmer" className="final-tag">Programmer</Link>
+          <Link to="/positions/software-tester" className="final-tag">Software Tester</Link>
+          <Link to="/positions/researcher" className="final-tag">Researcher</Link>
+          <Link to="/positions/content-creator" className="final-tag">Content Creator</Link>
+          <Link to="/positions/graphic-designer" className="final-tag">Graphic Designer</Link>
+          <Link to="/positions/interpreter" className="final-tag">Interpreter</Link>
         </div>
       </div>
 
