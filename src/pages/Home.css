@@ -377,38 +377,10 @@
 	line-height: 1.6;
 }
 
-/* STATS */
-.stats-section {
-	display: flex;
-	justify-content: center;
-	gap: 4rem;
-	padding: 28px 22px;
-	background: rgba(10, 12, 26, 0.25);
-	border-top: 1px solid rgba(138, 180, 248, 0.12);
-	border-bottom: 1px solid rgba(138, 180, 248, 0.12);
-	backdrop-filter: blur(10px);
-}
 
-.stat-item {
-	text-align: center;
-}
 
-.stat-number {
-	display: block;
-	font-size: 3rem;
-	font-weight: 700;
-	background: linear-gradient(135deg, #8ab4f8, #c58af9);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-}
 
-.stat-label {
-	color: rgba(230, 237, 243, 0.75);
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
+
 
 /* FOOTER */
 .home-footer {
@@ -431,30 +403,7 @@
 	overflow: hidden;
 }
 
-.about-inner {
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 22px;
-	display: grid;
-	grid-template-columns: 1.05fr 0.95fr;
-	align-items: center;
-	gap: 42px;
-}
 
-/* LEFT */
-.about-left {
-	max-width: 700px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.about-title {
-	font-size: 2.5rem;
-	margin-bottom: 16px;
-	background: linear-gradient(90deg, #8ab4f8, #c58af9);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 
 .about-text {
 	font-size: 1.15rem;
@@ -463,18 +412,6 @@
 }
 
 
-
-
-
-/* ==============================
-   ABOUT SPLIT (text + image)
-   ============================== */
-
-.about-split {
-  position: relative;
-  padding: 110px 0;
-  overflow: hidden;
-}
 
 .about-inner {
   max-width: 1100px;

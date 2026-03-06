@@ -348,10 +348,9 @@ const Home = () => {
       <button className="final-btn">Send application</button>
     </div>
 
-    {/* CENTER DOODLE (later replace if you want) */}
+  
     <div className="final-doodle" aria-hidden="true">
-      {/* voorbeeld: astronaut doodle later */}
-      {/* <img src="/astronaut.png" alt="" /> */}
+  
       <img src="/theos2.png" alt="" />
     </div>
 
